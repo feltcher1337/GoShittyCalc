@@ -61,6 +61,7 @@ func main() {
 	}
 }
 
+// Evaluate expression
 func eval(str string) int {
 	exp, _ := govaluate.NewEvaluableExpression(str)
 	resultInterface, _ := exp.Eval(nil)
