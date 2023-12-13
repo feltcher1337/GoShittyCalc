@@ -38,8 +38,8 @@ func main() {
 		"i", "1",
 	)
 
-	re1, _ := regexp.Compile(`^ *([1-9]|10) *[+*/-] *([1-9]|10) *\r\n$`)
-	re2, _ := regexp.Compile(`(?i)^ *(I|II|III|IV|V|VI|VII|VIII|IX|X) *[+*/-] *(I|II|III|IV|V|VI|VII|VIII|IX|X) *\r\n$`)
+	re1, _ := regexp.Compile(`^ *([1-9]|10) *[+*/-] *([1-9]|10) *\r?\n?$`)
+	re2, _ := regexp.Compile(`(?i)^ *(I|II|III|IV|V|VI|VII|VIII|IX|X) *[+*/-] *(I|II|III|IV|V|VI|VII|VIII|IX|X) *\r?\n?$`)
 
 	fmt.Println("Enter an expression:")
 	userInput, _ := reader.ReadString('\n')
